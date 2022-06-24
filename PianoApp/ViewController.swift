@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     }
     
     func play(note: Int) {
+        
         print(note,references[note - 1])
         let reference = references[note - 1]
         if let path = Bundle.main.path(forResource: reference, ofType: "wav") {
